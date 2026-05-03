@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
+        svg.accent-red {
+    stroke: #e63946;
+}
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0f1113; /* Deep Charcoal */
@@ -69,7 +71,11 @@
                 <a href="#contact" class="hover:text-red-500 transition-colors">Contact</a>
             </div>
             <button class="md:hidden text-white" id="mobile-menu-btn">
-                <i data-lucide="menu"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+    <line x1="4" x2="20" y1="12" y2="12"></line>
+    <line x1="4" x2="20" y1="6" y2="6"></line>
+    <line x1="4" x2="20" y1="18" y2="18"></line>
+</svg>
             </button>
         </div>
     </nav>
@@ -125,12 +131,43 @@
                     <p>
                         From coordinating tour logistics to fine-tuning your digital footprint, we focus on bespoke, sustainable growth.
                     </p>
-                    <div class="pt-6 grid grid-cols-2 gap-4 text-sm font-bold uppercase tracking-widest">
-                        <div class="flex items-center space-x-2"><i data-lucide="check-circle" class="accent-red w-5 h-5"></i><span>Tour Logistics</span></div>
-                        <div class="flex items-center space-x-2"><i data-lucide="check-circle" class="accent-red w-5 h-5"></i><span>A&R Direction</span></div>
-                        <div class="flex items-center space-x-2"><i data-lucide="check-circle" class="accent-red w-5 h-5"></i><span>Release Strategy</span></div>
-                        <div class="flex items-center space-x-2"><i data-lucide="check-circle" class="accent-red w-5 h-5"></i><span>Brand Identity</span></div>
-                    </div>
+<div class="pt-6 grid grid-cols-2 gap-4 text-sm font-bold uppercase tracking-widest">
+    <!-- Tour Logistics -->
+    <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="accent-red">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span>Tour Logistics</span>
+    </div>
+
+    <!-- A&R Direction -->
+    <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="accent-red">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span>A&R Direction</span>
+    </div>
+
+    <!-- Release Strategy -->
+    <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="accent-red">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span>Release Strategy</span>
+    </div>
+
+    <!-- Brand Identity -->
+    <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="accent-red">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span>Brand Identity</span>
+    </div>
+</div>
                 </div>
             </div>
         </div>
@@ -162,7 +199,7 @@
                             A powerhouse ensemble defining the next generation of alternative energy. From explosive live performances to meticulous studio craft.
                         </p>
                         <a href="https://jvktheband.com/" target="_blank" class="inline-flex items-center text-sm font-bold uppercase tracking-wider group-hover:text-red-500 transition-colors">
-                            Visit Website <i data-lucide="external-link" class="ml-2 w-4 h-4"></i>
+                            Visit Website <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
                     </div>
                 </div>
@@ -182,7 +219,7 @@
                             Blending high-octane pop-punk melodies with modern alternative production. Catchy hooks meets DIY grit.
                         </p>
                         <a href="https://lastseconddropout.com/" target="_blank" class="inline-flex items-center text-sm font-bold uppercase tracking-wider group-hover:text-red-500 transition-colors">
-                            Visit Website <i data-lucide="external-link" class="ml-2 w-4 h-4"></i>
+                            Visit Website <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
                     </div>
                 </div>
@@ -246,3 +283,25 @@
         <p class="text-slate-600 text-[10px] uppercase tracking-[0.2em]">© 2024 Schofield Productions</p>
     </div>
 </footer>
+<script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.querySelector('nav .hidden.md\\:flex');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('flex');
+                navMenu.classList.toggle('flex-col');
+                navMenu.classList.toggle('absolute');
+                navMenu.classList.toggle('top-20');
+                navMenu.classList.toggle('left-0');
+                navMenu.classList.toggle('w-full');
+                navMenu.classList.toggle('bg-[#0f1113]');
+                navMenu.classList.toggle('p-6');
+                navMenu.classList.toggle('border-b');
+                navMenu.classList.toggle('border-white/10');
+            });
+        }
+    </script>
+</body>
+</html>
