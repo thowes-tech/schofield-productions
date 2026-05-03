@@ -235,29 +235,40 @@
         </div>
 
         <div class="max-w-3xl mx-auto bg-[#0f1113] p-10 rounded-2xl border border-white/5 shadow-xl">
-            <form action="mailto:schofieldproductionsma@gmail.com" method="post" enctype="text/plain" class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="flex flex-col space-y-2">
-                        <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Band / Artist Name</label>
-                        <input type="text" name="BandName" placeholder="Your Name" class="form-input p-4 rounded-lg text-white" required>
-                    </div>
-                    <div class="flex flex-col space-y-2">
-                        <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Social Media Handle</label>
-                        <input type="text" name="SocialHandle" placeholder="@yourband" class="form-input p-4 rounded-lg text-white" required>
-                    </div>
-                </div>
-                <div class="flex flex-col space-y-2">
-                    <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Spotify / Soundcloud Link</label>
-                    <input type="url" name="SpotifyLink" placeholder="https://open.spotify.com/artist/..." class="form-input p-4 rounded-lg text-white">
-                </div>
-                <div class="flex flex-col space-y-2">
-                    <label class="text-xs font-bold uppercase tracking-widest text-slate-500">What is your biggest current hurdle?</label>
-                    <textarea name="Hurdle" rows="4" placeholder="Touring, funding, management, etc." class="form-input p-4 rounded-lg text-white resize-none" required></textarea>
-                </div>
-                <button type="submit" class="w-full py-4 bg-accent-red hover:bg-red-600 text-white font-extrabold rounded-lg transition-all uppercase tracking-widest">
-                    Submit
-                </button>
-            </form>
+         <!-- Updated Form for Web3Forms -->
+<form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+    
+    <!-- Step 1: Your Access Key -->
+    <input type="hidden" name="access_key" value="b6d1d6bc-7105-4470-8227-aa32747c50f6">
+
+    <!-- Step 2: Subject line for the email you receive -->
+    <input type="hidden" name="subject" value="New Artist Inquiry - Schofield Productions">
+
+    <!-- Step 3: Anti-Spam Honeypot (hidden from users) -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex flex-col space-y-2">
+            <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Band / Artist Name</label>
+            <input type="text" name="BandName" placeholder="Your Name" class="form-input p-4 rounded-lg text-white" required>
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Social Media Handle</label>
+            <input type="text" name="SocialHandle" placeholder="@yourband" class="form-input p-4 rounded-lg text-white" required>
+        </div>
+    </div>
+    <div class="flex flex-col space-y-2">
+        <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Spotify / Soundcloud Link</label>
+        <input type="url" name="SpotifyLink" placeholder="https://open.spotify.com/artist/..." class="form-input p-4 rounded-lg text-white">
+    </div>
+    <div class="flex flex-col space-y-2">
+        <label class="text-xs font-bold uppercase tracking-widest text-slate-500">What is your biggest current hurdle?</label>
+        <textarea name="Hurdle" rows="4" placeholder="Touring, funding, management, etc." class="form-input p-4 rounded-lg text-white resize-none" required></textarea>
+    </div>
+    <button type="submit" class="w-full py-4 bg-accent-red hover:bg-red-600 text-white font-extrabold rounded-lg transition-all uppercase tracking-widest">
+        Submit
+    </button>
+</form>
         </div>
     </section>
 
